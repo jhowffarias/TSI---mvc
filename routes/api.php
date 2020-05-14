@@ -23,4 +23,5 @@ Route::group(['prefix' => 'v1'], function () {
     Route::post('/sellers', 'SellersController@store');
     Route::delete('/sellers/{id}', 'SellersController@destroy');
     Route::get('/sellers/{id}', 'SellersController@show');
+    Route::get('/sellers/{id}', 'SellersController@update');
     });
