@@ -81,7 +81,12 @@ class SellersController extends Controller
         if($seller) {
             $json = $request->getContent();
             $atualizacao = json_decode($json, JSON_OBJECT_AS_ARRAY);
-        }
+            $seller->nome = $atualizacao['nome'];
+            $ret = $seller->update() ? [$id=>'atualizado com sucesso']:[$id=>'erro'];
+                }else{
+                    $ret = [$id=>'não existe'];
+                }
+                return json_encode($ret);
     }
 
     /**
