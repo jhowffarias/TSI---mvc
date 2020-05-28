@@ -83,6 +83,7 @@
                         <li class="list-group-item"><a href="{{ route('users.index') }}">Usuários</a></li>
                         <li class="list-group-item"><a href="{{ route('clientes') }}">Clientes</a></li>
                         <li class="list-group-item"><a href="{{ route('produtos') }}">Produtos</a></li>
+                        <li class="list-group-item"><a href="{{ route('camisetas.index') }}">Camisetas</a></li>
                     </ul>
                 </div>
                 <div class="col-md-9">
